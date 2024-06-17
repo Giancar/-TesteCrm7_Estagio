@@ -6,15 +6,15 @@ export class RepositoryAccount {
     }
 
     async delete(id) {
-        return await AccountSchema.deleteOne({ _id: id });
+        return await AccountSchema.deleteOne({_id: id});
     }
 
     async fetch(id) {
-        return await AccountSchema.findOne({ _id: id });
+        return await AccountSchema.findOne({_id: id});
     }
 
     async update(id, data) {
-        return await AccountSchema.updateOne({ _id: id }, {$set:data});
+        return await AccountSchema.updateOne({_id: id}, {$set:data});
     }
 
     async findAll() {

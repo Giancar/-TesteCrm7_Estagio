@@ -7,6 +7,12 @@ const accountSchema = new mongoose.Schema({
   cnpj: {
     type: String,
   },
+  cep:{
+    type: Number,
+  },
+  localidade:{
+    type: String,
+  },
   dataCriacao: {
     type: Date,
     default: Date.now,
