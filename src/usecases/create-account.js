@@ -2,7 +2,6 @@ import {RepositoryAccount} from '../infrastructure/db/repository/repository-acco
 
 export class CreateAccount {
   async execute(req) {
-    console.log(req);
     const response = await new RepositoryAccount().create(req.body);
     return response;
   }
