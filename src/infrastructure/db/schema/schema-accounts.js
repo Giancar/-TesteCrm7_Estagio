@@ -8,9 +8,12 @@ const accountSchema = new mongoose.Schema({
     type: String,
   },
   cep:{
-    type: Number,
+    type: String,
   },
   localidade:{
+    type: String,
+  },
+  bairro:{
     type: String,
   },
   dataCriacao: {
